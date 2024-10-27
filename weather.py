@@ -109,6 +109,6 @@ def main():
         generate_qr_code(report, report_dir)
 
 
-    else:
-        print("Couldn't find the location. Please check the city name and try again.")
+    else: # Do it if the location is invalid, or something goes wrong
+        print("Couldn't find the location. Please check the city name and try again. And check your internet connection.")
 main()
