@@ -73,8 +73,3 @@ Feel free to fork the repository and submit pull requests. Any contributions and
 
 - Thanks to [Open-Meteo](https://open-meteo.com/) for providing the weather data API.
 - Special thanks to [GoQR.me](https://goqr.me/) for the QR code generation API.
-
-<br><br>
-<br>
-<br>
-NOTE: There's a bug for showing the time of sunrise and sunset, work is going on to fix it.

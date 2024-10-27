@@ -33,7 +33,7 @@ def generate_qr_code(text, report_dir):
 
 
 def get_weather(latitude, longitude): # Take latitude and longitue as argumant
-    weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m,precipitation,visibility,relative_humidity_2m,cloudcover,pressure_msl,dewpoint_2m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&hourly=temperature_2m" # API request URL
+    weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m,precipitation,visibility,relative_humidity_2m,cloudcover,pressure_msl,dewpoint_2m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&hourly=temperature_2m&timezone=auto" # API request URL
     response = requests.get(weather_url) # Request based on the latitude and longitude
     weather_data = response.json() # Convert to json
     return weather_data # Return it.
